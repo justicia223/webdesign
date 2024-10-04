@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Permohonan Tamat</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        th, td {
+            text-align: center;
+        }
+        .instructions {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Disetujui oleh:</h2>
+
+    <table style="width: 100%;">
+        <tr>
+            <th>DEKAN</th>
+            <th>KETUA PRODI</th>
+            <th>KETUA MINOR</th>
+            <th>REGISTRAR</th>
+        </tr>
+        <tr>
+            <td><br><br></td>
+            <td><br><br></td>
+            <td><br><br></td>
+            <td><br><br></td>
+        </tr>
+    </table>
+
+    <p class="instructions">
+        1. Permohonan ini harus diisi pada permulaan semester untuk ditamatkan (hari pertama kuliah).<br>
+        2. Mata kuliah yang dituliskan pada permohonan ini adalah sesuai dengan semua sisa mata kuliah yang harus diambil term<br>
+        ini.<br>
+        3. Surat Permohonan Tamat ini harus ditanda tangani oleh Dekan, Ketua Prodi, dan Ketua Minor masing-masing fakultas.<br>
+        4. SPT ini dianggap selesai (Sah) apabila sudah dimasukkan di kantor Registrar.<br>
+        5. Batas pemasukan SPT satu minggu sesudah Add & Drop mata kuliah.
+    </p>
+
+    <h3>Juga melampirkan Surat/Sertifikat di bawah ini:</h3>
+
+    <table style="width: 100%;">
+        <tr>
+            <th>Fak. Filsafat</th>
+            <th>Fak. Ilmu Komputer</th>
+            <th>Fak. Keguruan dan Ilmu Pendidikan</th>
+            <th>ASMIK</th>
+        </tr>
+        <tr>
+            <td>Surat Menjual Buku</td>
+            <td>Sertifikat Oracle & Cisco</td>
+            <td>Ujian Comprehensive bagi yang tidak mengambil Skripsi</td>
+            <td>Sertifikat Seminar & Table Manner (minimal 5)</td>
+        </tr>
+    </table>
+
+    <p>Upload Surat/Sertifikat: <input type="file" name="file" /></p>
+
+    <p>
+        <input type="checkbox" name="confirm" required> 
+        Dengan ini saya menyatakan bahwa semua informasi pada Surat Permohonan Tamat ini adalah lengkap dan benar.
+    </p>
+
+    <p>Airmadidi, <input type="date" name="tanggal" required></p>
+
+    <p>(Nama Lengkap Mahasiswa)</p>
+
+    <button type="submit">Submit</button>
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Permohonan Tamat</title>
+</head>
+<body>
+    <h1>SURAT PERMOHONAN TAMAT</h1>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>Nama (Sesuai Ijazah):</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon/HP:</td>
+                <td><input type="text" name="telepon" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" name="gender" value="Laki-Laki" required>Laki-Laki
+                    <input type="radio" name="gender" value="Perempuan" required>Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Nomor Induk Mahasiswa:</td>
+                <td><input type="text" name="nim" required></td>
+            </tr>
+            <tr>
+                <td>Nomor Induk Kependudukan:</td>
+                <td><input type="text" name="nik" required></td>
+            </tr>
+            <tr>
+                <td>Fakultas:</td>
+                <td>
+                    <select name="fakultas" required>
+                        <option value="">-- Pilih Fakultas --</option>
+                        <option value="Fak1">Fakultas 1</option>
+                        <option value="Fak2">Fakultas 2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Program Studi:</td>
+                <td>
+                    <select name="program_studi" required>
+                        <option value="">-- Pilih Prodi --</option>
+                        <option value="Prodi1">Prodi 1</option>
+                        <option value="Prodi2">Prodi 2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Minor:</td>
+                <td><input type="text" name="minor"></td>
+            </tr>
+            <tr>
+                <td>Tahun Ajaran:</td>
+                <td><input type="text" name="tahun_ajaran" value="Tahun Akademik 2024/2025" readonly></td>
+            </tr>
+            <tr>
+                <td>Tanggal Penamatan:</td>
+                <td><input type="date" name="tanggal_penamatan" required></td>
+            </tr>
+        </table>
+
+        <h3>SISA MATA KULIAH YANG HARUS DIAMBIL</h3>
+        <table border="1">
+            <tr>
+                <th>No</th>
+                <th>Mata Kuliah</th>
+                <th>Kredit</th>
+                <th>Nama Dosen Mengajar</th>
+                <th>Paralel</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" name="mata_kuliah_1"></td>
+                <td><input type="number" name="kredit_1"></td>
+                <td><input type="text" name="dosen_1"></td>
+                <td><input type="text" name="paralel_1"></td>
+                <td><input type="text" name="keterangan_1"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="text" name="mata_kuliah_2"></td>
+                <td><input type="number" name="kredit_2"></td>
+                <td><input type="text" name="dosen_2"></td>
+                <td><input type="text" name="paralel_2"></td>
+                <td><input type="text" name="keterangan_2"></td>
+            </tr>
+            <!-- Repeat for other mata kuliah -->
+        </table>
+
+        <h3>Disetujui oleh:</h3>
+        <table border="1">
+            <tr>
+                <th>DEKAN</th>
+                <th>KETUA PRODI</th>
+                <th>KETUA MINOR</th>
+                <th>REGISTRAR</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="dekan" readonly></td>
+                <td><input type="text" name="ketua_prodi" readonly></td>
+                <td><input type="text" name="ketua_minor" readonly></td>
+                <td><input type="text" name="registrar" readonly></td>
+            </tr>
+        </table>
+
+        <p>Juga melampirkan Surat/Sertifikat di bawah ini:</p>
+        <input type="file" name="sertifikat">
+
+        <p>
+            <input type="checkbox" name="confirm" required>
+            Dengan ini saya menyatakan bahwa semua informasi pada Surat Permohonan Tamat ini adalah lengkap dan benar.
+        </p>
+
+        <p>Airmadidi, <input type="date" name="tanggal" required></p>
+
+        <p>(Nama Lengkap Mahasiswa)</p>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
